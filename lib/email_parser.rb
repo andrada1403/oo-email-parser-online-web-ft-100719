@@ -4,7 +4,7 @@ attr_accessor :email_addresses
     @email_addresses=email_addresses
   end
   def parse
-    email_addresses.split.uniq
+    email_addresses.split(" ").uniq
   end
 end
 # Build a class EmailParser that accepts a string of unformatted
